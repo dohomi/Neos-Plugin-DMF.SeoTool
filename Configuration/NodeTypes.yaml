@@ -1,0 +1,31 @@
+'TYPO3.Neos:Page':
+  ui:
+    inspector:
+      groups:
+        metaTagOptions:
+          label: 'Meta Tag Options'
+  properties:
+    navigationLabel:
+      type: string
+      ui:
+        label: 'Navigation Label'
+        inspector:
+          group: document
+    navigationTitle:
+      type: string
+      ui:
+        label: 'Navigation Title'
+        inspector:
+          group: document
+    metaDescription:
+      type: string
+      ui:
+        label: 'Meta Description'
+        inspector:
+          group: metaTagOptions
+    canonical:
+      type: reference
+      ui:
+        label: 'Canonical Reference'
+        inspector:
+          group: metaTagOptions
