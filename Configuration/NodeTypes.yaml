@@ -5,10 +5,10 @@
         metaTagOptions:
           label: 'Meta Tag Options'
   properties:
-    navigationLabel:
+    pageTitle:
       type: string
       ui:
-        label: 'Navigation Label'
+        label: 'Meta Page Title'
         inspector:
           group: document
     navigationTitle:
@@ -29,3 +29,23 @@
         label: 'Canonical Reference'
         inspector:
           group: metaTagOptions
+    robots:
+      type: string
+      defaultValue: '0'
+      ui:
+        label: 'Robots Meta Tag'
+        inspector:
+          group: metaTagOptions
+          editor: Content/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            values:
+              '0':
+                label: 'Default'
+              '1':
+                label: 'Index Follow'
+              '2':
+                label: 'Index Nofollow'
+              '3':
+                label: 'Noindex Follow'
+              '4':
+                label: 'Noindex Nofollow'

@@ -1,0 +1,17 @@
+DMF.SeoTool:PageTitle = TYPO3.TypoScript:Template {
+    templatePath = 'resource://DMF.SeoTool/Private/Templates/TypoScriptObjects/PageTitle.html'
+    pageTitle =  ${q(node).filter('[instanceof TYPO3.Neos:Page]').property('pageTitle')}
+    title =  ${q(node).filter('[instanceof TYPO3.Neos:Page]').property('title')}
+}
+
+DMF.SeoTool:MetaContent = TYPO3.TypoScript:Template {
+    templatePath = 'resource://DMF.SeoTool/Private/Templates/TypoScriptObjects/MetaContent.html'
+    metaDescription = ${q(node).filter('[instanceof TYPO3.Neos:Page]').property('metaDescription')}
+    robots = ${q(node).filter('[instanceof TYPO3.Neos:Page]').property('robots')}
+}
+
+DMF.SeoTool:Canonical = TYPO3.TypoScript:Template {
+    templatePath = 'resource://DMF.SeoTool/Private/Templates/TypoScriptObjects/Canonical.html'
+    canonical = ${q(node).filter('[instanceof TYPO3.Neos:Page]').property('canonical')}
+    alwaysInclude = 1
+}

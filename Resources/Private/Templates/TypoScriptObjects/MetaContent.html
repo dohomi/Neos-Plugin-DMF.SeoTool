@@ -1,0 +1,19 @@
+<f:if condition="{metaDescription}">
+    <meta name="description" content="{metaDescription}">
+</f:if>
+
+<f:if condition="{robots} == 0">
+    <meta name="robots" content="index, follow">
+</f:if>
+<f:if condition="{robots} == 1">
+    <meta name="robots" content="index, follow">
+</f:if>
+<f:if condition="{robots} == 2">
+    <meta name="robots" content="index, nofollow">
+</f:if>
+<f:if condition="{robots} == 3">
+    <meta name="robots" content="noindex, follow">
+</f:if>
+<f:if condition="{robots} == 4">
+    <meta name="robots" content="noindex, nofollow">
+</f:if>

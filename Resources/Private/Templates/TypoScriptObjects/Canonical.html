@@ -1,0 +1,15 @@
+{namespace neos=TYPO3\Neos\ViewHelpers}
+
+<f:if condition="{canonical}">
+    <f:then>
+        <link rel="canonical" href="{neos:uri.node(node:'{canonical}',absolute:'true')}">
+    </f:then>
+    <f:else>
+        <f:if condition="{alwaysInclude}">
+            <link rel="canonical" href="{neos:uri.node(absolute:'true')}">
+        </f:if>
+    </f:else>
+</f:if>
+
+
+
