@@ -2,34 +2,34 @@
   ui:
     inspector:
       groups:
-        metaTagOptions:
+        'metaTagOptions':
           label: 'Meta Tag Options'
   properties:
-    pageTitle:
+    'pageTitle':
       type: string
       ui:
         label: 'Meta Page Title'
         inspector:
           group: document
-    navigationTitle:
+    'navigationTitle':
       type: string
       ui:
         label: 'Navigation Title'
         inspector:
           group: document
-    metaDescription:
+    'metaDescription':
       type: string
       ui:
         label: 'Meta Description'
         inspector:
           group: metaTagOptions
-    canonical:
+    'canonical':
       type: reference
       ui:
         label: 'Canonical Reference'
         inspector:
           group: metaTagOptions
-    robots:
+    'robots':
       type: string
       defaultValue: '0'
       ui:

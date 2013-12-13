@@ -6,11 +6,10 @@ This plugin provides some useful NodeType properties for pages. Navigation label
 ## Installation
 Clone this repository into your application folder:
 
-
     * cd ROOT/Packages/Application
     * git clone git@github.com:dohomi/Neos-Plugin-DMF.SeoTool.git DMF.SeoTool
 
-Then activate the plugin inside of your package management. Check if the plugin is listed:
+Then check if the plugin needs to get activated inside of your package management. Check if the plugin is listed:
 
     ./flow package:list
     ./flow package:activate dmf/seotool
