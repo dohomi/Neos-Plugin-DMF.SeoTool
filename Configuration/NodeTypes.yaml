@@ -17,6 +17,12 @@
         label: 'Navigation Title'
         inspector:
           group: document
+    'websiteTitle':
+      type: string
+      ui:
+        label: 'Website H1 Title'
+        inspector:
+          group: document
     'metaDescription':
       type: string
       ui:
