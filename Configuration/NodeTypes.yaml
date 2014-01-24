@@ -1,4 +1,4 @@
-'TYPO3.Neos.NodeTypes:Page':
+'TYPO3.Neos:Document':
   ui:
     inspector:
       groups:
@@ -8,40 +8,28 @@
     'pageTitle':
       type: string
       ui:
-        label: 'Meta Page Title'
+        label: 'Page Title (Head)'
         inspector:
-          group: document
-    'navigationTitle':
-      type: string
-      ui:
-        label: 'Navigation Title'
-        inspector:
-          group: document
-    'websiteTitle':
-      type: string
-      ui:
-        label: 'Website H1 Title'
-        inspector:
-          group: document
+          group: 'document'
     'metaDescription':
       type: string
       ui:
         label: 'Meta Description'
         inspector:
-          group: metaTagOptions
+          group: 'metaTagOptions'
     'canonical':
       type: reference
       ui:
         label: 'Canonical Reference'
         inspector:
-          group: metaTagOptions
+          group: 'metaTagOptions'
     'robots':
       type: string
       defaultValue: '0'
       ui:
         label: 'Robots Meta Tag'
         inspector:
-          group: metaTagOptions
+          group: 'metaTagOptions'
           editor: Content/Inspector/Editors/SelectBoxEditor
           editorOptions:
             values:
