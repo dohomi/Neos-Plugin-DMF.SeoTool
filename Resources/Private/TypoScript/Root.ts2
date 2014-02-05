@@ -1,16 +1,31 @@
-DMF.SeoTool:PageTitle = TYPO3.TypoScript:Template {
-    templatePath = 'resource://DMF.SeoTool/Private/Templates/TypoScriptObjects/PageTitle.html'
-    pageTitle =  ${q(node).filter('[instanceof TYPO3.Neos.NodeTypes:Page]').property('pageTitle') || q(node).filter('[instanceof TYPO3.Neos.NodeTypes:Page]').property('title')}
-}
-
 DMF.SeoTool:MetaContent = TYPO3.TypoScript:Template {
     templatePath = 'resource://DMF.SeoTool/Private/Templates/TypoScriptObjects/MetaContent.html'
-    metaDescription = ${q(node).filter('[instanceof TYPO3.Neos.NodeTypes:Page]').property('metaDescription')}
-    robots = ${q(node).filter('[instanceof TYPO3.Neos.NodeTypes:Page]').property('robots')}
+    metaDescription = ${q(node).filter('[instanceof TYPO3.Neos:Document]').property('metaDescription')}
+    robots = ${q(node).filter('[instanceof TYPO3.Neos:Document]').property('robots')}
+    @position = '10'
+
 }
+/*
+DMF.SeoTool:MetaContent2 = TYPO3.TypoScript:Array {
+
+    metaDescription = TYPO3.TypoScript:Case {
+        description {
+            tagName = 'meta'
+            attributes {
+                name = 'description'
+                content = ${q(node).property('metaDescription')}
+            }
+            type = 'TYPO3.TypoScript:Tag'
+            condition = ${q(node).property('metaDescription')}
+        }
+    }
+    @position = '5'
+}
+*/
 
 DMF.SeoTool:Canonical = TYPO3.TypoScript:Template {
     templatePath = 'resource://DMF.SeoTool/Private/Templates/TypoScriptObjects/Canonical.html'
-    canonical = ${q(node).filter('[instanceof TYPO3.Neos.NodeTypes:Page]').property('canonical')}
+    canonical = ${q(node).filter('[instanceof TYPO3.Neos:Document]').property('canonical')}
     alwaysInclude = 1
+    @position = '15'
 }
