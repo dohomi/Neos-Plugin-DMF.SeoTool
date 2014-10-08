@@ -2,11 +2,11 @@
     "name": "dmf/seotool",
     "type": "typo3-flow-package",
     "description": "SeoTool provides meta information and additional title properties for navigation.",
-    "version": "0.1",
+    "version": "1.1.0",
     "require": {
         "typo3/flow": "*",
-        "typo3/typoscript": "*",
-        "typo3/neos": "1.0.*"
+        "typo3/typoscript": "1.1.*",
+        "typo3/neos": "1.1.*"
 
     },
     "autoload": {
